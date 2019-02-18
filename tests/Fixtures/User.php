@@ -10,6 +10,10 @@ class User implements AttributeInterface
 {
     use Attributable;
 
+    public $username;
+
+    public $website;
+
     public function __construct($options = array())
     {
         foreach ($options as $key => $value) {
