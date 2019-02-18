@@ -21,7 +21,7 @@ class AttributeTest extends TestCase
         $this->assertFalse($user->isOptionalAttribute('username'));
     }
 
-    public function testMissingAttributes()
+    public function testMissingAttribute()
     {
         $this->setExpectedException('Attribute\Exception\MissingRequiredAttributeException');
 
