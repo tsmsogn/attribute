@@ -4,6 +4,12 @@
 
 - PHP 5.4 or later
 
+## Installation
+
+```shell
+composer require tsmsogn/attribute
+```
+
 ## Usage
 
 ### Make a class attribute:
