@@ -3,3 +3,49 @@
 ## Requirements
 
 - PHP 5.4 or later
+
+## Usage
+
+### Make a class attribute:
+
+Use the `Attributable` and implement the `AttributeInterface` on your class:
+
+```php
+<?php
+
+namespace What\You\Like;
+
+
+use Attribute\Attributable;
+use Attribute\AttributeInterface;
+
+class User implements AttributeInterface
+{
+    use Attributable;
+
+    public $username;
+
+    public $website;
+
+    public function __construct($options = array())
+    {
+        foreach ($options as $key => $value) {
+            $this->$key = $value;
+        }
+
+        $this->attributeMissing(); // Check if wheter the required attributes are missing or not.
+    }
+
+    public function getRequiredAttributes()
+    {
+        return array('username');
+    }
+
+    public function getOptionalAttributes()
+    {
+        return array('website');
+    }
+}
+```
+
+More details available at [tests](https://github.com/tsmsogn/attribute/blob/master/tests/AttributeTest.php).
