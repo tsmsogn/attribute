@@ -1,0 +1,25 @@
+{
+    "name": "tsmsogn/attribute",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tsmsogn",
+            "email": "tsmsogn@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^4.8|^5.7",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Attribute\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Attribute\\Test\\": "tests/"
+        }
+    }
+}
