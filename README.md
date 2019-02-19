@@ -19,7 +19,7 @@ Use the `Attributable` and implement the `AttributeInterface` on your class:
 ```php
 <?php
 
-namespace What\You\Like;
+namespace Do\What\You\Like;
 
 
 use Attribute\Attributable;
@@ -54,4 +54,4 @@ class User implements AttributeInterface
 }
 ```
 
-More details available at [tests](https://github.com/tsmsogn/attribute/blob/master/tests/AttributeTest.php).
+See more detail at [tests](https://github.com/tsmsogn/attribute/blob/master/tests/AttributeTest.php).
